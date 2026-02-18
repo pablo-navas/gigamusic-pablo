@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oyelo y sientelo</title>
+    <link rel="stylesheet" href="css de player/devueltaconmain.css">
+    <link rel="stylesheet" href="css de player/aescuchar.css">
+</head>
+<body>
+
+    <div class="immersive-bg"></div>
+
+    <div class="player-layout">
+        
+        <a href="index.html" class="back-btn">
+            ← Volver a la Tienda
+        </a>
+
+        <main class="player-stage">
+            
+            <div class="album-glow-container">
+                <div class="art-wrapper">
+                    <img src="imagenes/ado3.jpg" alt="Cosmic Echoes Cover" class="cover-image">
+                </div>
+                <div class="track-info">
+                    <h1 class="track-title"> usubeni</h1> <br>
+                    <h2 class="artist-name">Ado</h2>
+                </div>
+            </div>
+
+            <div class="controls-container">
+                <div class="progress-area">
+                    <span class="time">1:24</span>
+                    <input type="range" class="seek-slider" value="35" max="100">
+                    <span class="time">3:45</span>
+                </div>
+
+                <hr>
+                    <br>
+                <div class="main-buttons">
+                    <button class="ctrl-btn sm" title="Aleatorio">Aleatorio</button>
+                    <button class="ctrl-btn" title="Anterior">anteriormente</button>
+                    
+                    <button class="ctrl-btn play-btn" title="Pausar">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    
+                    <button class="ctrl-btn" title="Siguiente">Siguiente
+                    </button>
+                    <button class="ctrl-btn sm" title="Repetir">se repite</button>
+                </div>
+
+                <div class="volume-control">
+                    <span>volum.</span>
+                    <input type="range" class="volume-slider" value="80">
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
