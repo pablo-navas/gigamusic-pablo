@@ -3,138 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pago</title>
-     <link rel="stylesheet" href="css de player/esctructura arquitectonica.css">
-    <link rel="stylesheet" href="css de player/mainparte3.csss">
-        <link rel="stylesheet" href="css de player/botonsitosUwU.css">
-      
-    <style>
-       
-    .checkout-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        @media (min-width: 992px) {
-            .checkout-grid { grid-template-columns: 2fr 1fr; }
-        }
-        .form-group { margin-bottom: 1.5rem; }
-        .form-group label { display: block; margin-bottom: 0.5rem; color: var(--text-secondary); }
-        .form-control {
-            width: 100%;
-            padding: 12px;
-            background: #1e293b;
-            border: 1px solid #334155;
-            border-radius: var(--radius);
-            color: white;
-        }
-        .cart-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem;
-            background: #1e293b;
-            border-radius: var(--radius);
-            margin-bottom: 1rem;
-        }
-        .cart-item img { width: 60px; height: 60px; border-radius: 4px; }
-    </style>
- </head>
- <body>
+    <title>MusicStream | ¡Gracias!</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
 
     <div class="app-container">
         <aside class="sidebar">
-            <h1 style="color: rgb(41, 40, 40); margin-bottom: 2rem;">gigamusica</h1>
+            <h1 style="color: white; margin-bottom: 2rem;">MusicStream</h1>
             <nav>
+                <h4 style="font-size: 0.7rem; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem;">Mi Música</h4>
                 <ul class="nav-links">
-                    <li><a href="index.html"> Descubrir</a></li>
-                    <li><a href="profile.html">Mi Biblioteca</a></li>
-                    <li><a href="cart.html" class="active"> Carrito wiii</a></li>
+                    <li><a href="#" class="active"> Comprado recientemente</a></li>
+                    <li><a href="#"> Mis Álbumes</a></li>
+                    <li><a href="#">Canciones que te gustan</a></li>
                 </ul>
             </nav>
         </aside>
 
-        <main class="main-content">
-            <header>
-                <h2>Finalizar Compra</h2>
-                <p style="color: var(--text-secondary);">Completa los detalles para obtener tu música.</p>
-            </header>
-
-            <div class="checkout-grid">
-                <section class="checkout-forms">
-                    <div class="card-panel" style="background: #1e293b; padding: 2rem; border-radius: 12px;">
-                        <h3>Método de Pago</h3>
-                        <br>
-                        <div class="form-group">
-                            <label>Nombre en la tarjeta</label>
-                            <input type="text" class="form-control" placeholder="Juan Pérez">
-                        </div>
-                        <div class="form-group">
-                            <label>Número de tarjeta</label>
-                            <input type="text" class="form-control" placeholder="**** **** **** 4444">
-                        </div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                            <div class="form-group">
-                                <label>Expiración</label>
-                                <input type="text" class="form-control" placeholder="MM/AA">
-                            </div>
-                            <div class="form-group">
-                                <label>CVC</label>
-                                <input type="text" class="form-control" placeholder="123">
-                            </div>
-                        </div>
-                    </div>
-
-                    <br>
-
-                    <div class="card-panel" style="background: #1e293b; padding: 2rem; border-radius: 12px;">
-                        <h3>Dirección de Facturación</h3>
-                        <br>
-                        <div class="form-group">
-                            <label>Dirección</label>
-                            <input type="text" class="form-control" placeholder="Calle Falsa 123">
-                        </div>
-                    </div>
-                </section>
-
-                <aside class="order-summary">
-                    <div style="background: #1e293b; padding: 2rem; border-radius: 12px; border-top: 4px solid var(--accent);">
-                        <h3>Tu Pedido</h3>
-                        <hr style="border: 0; border-top: 1px solid #334155; margin: 1.5rem 0;">
-                        
-                        <div class="cart-item">
-                            
-                                <img src="imagenes/ado3.jpg">
-                                <div style="font-weight: bold; font-size: 0.9rem;">usebani</div>
-                                <div style="font-size: 0.8rem; color: var(--text-secondary);">Digital Album</div>
-                            
-                            <div style="font-weight: bold;">$12.99</div>
-                        </div>
-
-                        <div style="margin-top: 2rem;">
-                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                                <span>Subtotal</span>
-                                <span>$12.99</span>
-                            </div>
-                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                                <span>Impuestos (100%)</span>
-                                <span>12.99/span>
-                            </div>
-                            <div style="display: flex; justify-content: space-between; margin-top: 1rem; font-size: 1.2rem; font-weight: bold; color: var(--accent);">
-                                <span>Total</span>
-                                <span>$25.98</span>
-                            </div>
-                        </div>
-
-                        <br>
-                        <a href="success.html" class="btn btn-primary" style="width: 100%; display: block;">Confirmar y Pagar</a>
-                        <p style="font-size: 0.7rem; text-align: center; margin-top: 1rem; color: var(--text-secondary);">
-                         Pago seguro y procesado por Acme Records.
-                        </p>
-                    </div>
-                </aside>
-            </div>
+        <main class="main-content" style="display: flex; align-items: center; justify-content: center; text-align: center;">
+            <section style="max-width: 500px;">
+                <div style="font-size: 5rem;">:D</div>
+                <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">¡Compra Exitosa!</h1>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                    El álbum <strong>Solar Flare</strong> ha sido añadido a tu biblioteca. Ya puedes escucharlo en alta fidelidad.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <a href="player.html" class="btn btn-primary">Escuchar Ahora</a>
+                    <a href="index.html" class="btn" style="background: #334155;">Volver a la tienda</a>
+                </div>
+            </section>
         </main>
     </div>
 
