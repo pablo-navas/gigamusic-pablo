@@ -1,9 +1,9 @@
 :root {
    
-    --bg-main: #0f172a;       
+    -moz-main: #0f172a;     
     --bg-secondary: #1e293b;  
     --text-primary: #f8fafc;  
-    --text-secondary: #94a3b8;
+    --text-secondary: #94a3b8; 
     --accent: #3b82f6;        
     --accent-hover: #2563eb;
     --danger: #ef4444;
@@ -13,7 +13,6 @@
     --spacing-md: 1rem;
     --spacing-lg: 2rem;
     
-   
     --radius: 8px;
 }
 
