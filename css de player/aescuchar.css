@@ -73,8 +73,8 @@ input[type=range] {
     background: transparent;
     cursor: pointer;
 }
-
-
+/* weee  */
+/* que mande -_-? */
 input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 6px;
@@ -123,4 +123,73 @@ input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.2); }
 }
 
 .ctrl-btn:hover { opacity: 1; color: var(--accent); transform: scale(1.1); }
-.ctrl-btn.sm { font-size: 1.2rem; color: var(--text-secondary); } /* :v */
+.ctrl-btn.sm { font-size: 1.2rem; color: var(--text-secondary); } /* :v se me canso el cerebro we */
+
+.play-btn {
+    width: 70px;
+    height: 70px;
+    background: var(--accent);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+    opacity: 1;
+}
+
+.play-btn:hover {
+    background: var(--accent-hover);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.5);
+}
+
+.volume-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+.playlist-sidebar {
+    width: 350px;
+    background: rgba(30, 41, 59, 0.5); 
+    backdrop-filter: blur(10px);
+    border-left: 1px solid rgba(255,255,255,0.05);
+    padding: 2rem;
+    display: none; 
+}
+
+.queue-list { list-style: none; margin-top: 2rem; }
+
+.queue-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.queue-item:hover { background: rgba(255,255,255,0.05); }
+
+.queue-item.active {
+    background: rgba(59, 130, 246, 0.1);
+    border-left: 3px solid var(--accent);
+}
+
+.queue-item .q-title { display: block; font-weight: bold; font-size: 0.9rem; }
+.queue-item .q-artist { display: block; font-size: 0.8rem; color: var(--text-secondary); }
+
+@media (min-width: 1024px) {
+    .playlist-sidebar { display: block; } 
+}
+
+@media (max-width: 768px) {
+    .art-wrapper { width: 250px; height: 250px; }
+    .track-title { font-size: 1.5rem; }
+}
