@@ -1,7 +1,7 @@
 :root {
-   
-    -moz-main: #0f172a;     
-    --bg-secondary: #1e293b;  
+
+    --bg-main: #0f172a;       
+    --bg-secondary: #1e293b; 
     --text-primary: #f8fafc;  
     --text-secondary: #94a3b8; 
     --accent: #3b82f6;        
@@ -12,6 +12,7 @@
     --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
     --spacing-lg: 2rem;
+    
     
     --radius: 8px;
 }
